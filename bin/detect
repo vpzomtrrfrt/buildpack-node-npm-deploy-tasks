@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-if (test -f $1/Rakefile) then
-  echo "Rake"
+if (test -f $1/package.json) then
+  echo "NPM"
   exit 0
 else
   echo "no"
